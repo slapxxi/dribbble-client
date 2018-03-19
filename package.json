@@ -1,0 +1,99 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.17.1",
+    "cheerio": "^1.0.0-rc.2",
+    "expo": "^24.0.2",
+    "form-data": "^2.3.1",
+    "glamor": "^2.20.40",
+    "glamorous": "^4.11.2",
+    "glamorous-native": "^1.2.1",
+    "iconv-lite": "^0.4.19",
+    "lodash": "^4.17.4",
+    "react": "^16.2.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-24.0.0.tar.gz",
+    "react-native-cheerio": "^1.0.0-rc.4",
+    "react-native-vector-icons": "^4.5.0",
+    "react-navigation": "^1.0.0-beta.23",
+    "react-redux": "^5.0.6",
+    "recompose": "^0.26.0",
+    "redux": "^3.7.2",
+    "redux-observable": "^0.17.0",
+    "rxjs": "^5.5.6"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.6.1",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "flow-bin": "^0.63.1",
+    "flow-typed": "^2.2.3",
+    "jest": "^22.0.5",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.2.0",
+    "react-native-mock": "^0.3.1",
+    "redux-mock-store": "^1.4.0"
+  },
+  "scripts": {
+    "start": "exp start",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "flow": "flow"
+  },
+  "babel": {
+    "plugins": [
+      "transform-class-properties"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "plugins": [
+      "jest"
+    ],
+    "env": {
+      "jest/globals": true
+    },
+    "rules": {
+      "import/no-extraneous-dependencies": [
+        0
+      ],
+      "react/jsx-filename-extension": [
+        0
+      ],
+      "no-use-before-define": [
+        0
+      ],
+      "react/sort-comp": [
+        0
+      ],
+      "arrow-parens": [
+        0
+      ],
+      "function-paren-newline": [
+        0
+      ],
+      "react/prefer-stateless-function": [
+        0
+      ]
+    }
+  },
+  "jest": {
+    "bail": true,
+    "preset": "react-native",
+    "setupFiles": [
+      "./src/testSetup.js"
+    ]
+  },
+  "prettier": {
+    "arrowParens": "always"
+  }
+}
